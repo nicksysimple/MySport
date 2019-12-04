@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:id="@+id/my"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/my"
+            android:src="@drawable/football"
+            android:id="@+id/football"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/football"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:id="@+id/sports"
+            android:text="Sports"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:text="Enter your Email Adress"
+            android:id="@+id/emailText"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailText"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emailEdit"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailBtn"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/emailEdit"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/forgot">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/facebook"
+            android:padding="15dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_toRightOf="@+id/facebook"
+            android:padding="15dp"
+            android:id="@+id/twitter"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/google"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/twitter"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

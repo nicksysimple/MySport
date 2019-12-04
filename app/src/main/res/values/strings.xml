@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MySport</string>
+    <string name="Opnen_navigation">Open Navigation Drawer</string>
+    <string name="Close_navigation">Close Navigation Drawer</string>
+    <string name="paragraph">
+        WELCOME TO MY SPORTS \n
+        Your dreams start with us , join sports  \n
+        App and be part of rhe winning team.We are \n
+        certified by Laikipia university to bring you \n
+        sports Events within our Campuses \n
+        as they occur Realtime.
+
+    </string>
+    <string name="help">
+        1.HOW TO INSTALL THE APP \n
+            Make sure you have a working Internet connection \n
+            Visit Google Play on your phone \n
+            Search for : My Sports App  \n
+            Hit on the Install Button \n
+
+        2.APP CONFIGURATION  \n
+            Register first on succesfflul Registration \n
+            you will Be directed to Login page \n
+            Where your username and password will be Required \n
+            Login to access full Features. \n
+
+
+        3.APPLICATION USE \n
+
+            Click on the Hambourg Menu to get Menu items \n
+            Choose the Activity you are interested in \n
+            Enroll for the aActivity then wait for  \n
+            a confirmation Text in your Email \n
+    </string>
+    <string name="developer">
+        I am the Developer Behind This Application \n
+        I have Ten years Experience in Android development \n
+
+    </string>
+    <string name="athletivs">
+        LU MARATHON  \n
+        VENUE : Laikipia University. \n
+        DATE  : 15th Dec 2019 . \n
+        TIME  : 9Am to 12pm. \n
+
+    </string>
+
+    <string name="event">
+
+                END YEAR MARATHON  \n
+        VENUE : Nyahururu Campus Highway. \n
+        DATE  : 28th Dec 2019 . \n
+        TIME  : 9Am to 12pm. \n
+
+    </string>
+    <string name="no">
+        No
+    </string>
+    <string name="yes">
+        yes
+    </string>
+
+</resources>

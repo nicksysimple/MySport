@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:id="@+id/my"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/my"
+            android:src="@drawable/football"
+            android:id="@+id/football"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/football"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:id="@+id/sports"
+            android:text="Sports"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/relative"
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN "
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/sighn"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/Userin"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:id="@+id/Passin"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:id="@+id/Btn2"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/Forgot"/>
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Dont have an Account? Register"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linear">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/facebook"
+            android:padding="15dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_toRightOf="@+id/facebook"
+            android:padding="15dp"
+            android:id="@+id/twitter"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/google"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/twitter"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

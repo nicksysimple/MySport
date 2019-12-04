@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:layout_height="60dp"
+        android:src="@drawable/logoo"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:id="@+id/search"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/image"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/search"
+        android:text="@string/paragraph"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/text">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/facebook"
+            android:padding="15dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_toRightOf="@+id/facebook"
+            android:padding="15dp"
+            android:id="@+id/twitter"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/google"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/twitter"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

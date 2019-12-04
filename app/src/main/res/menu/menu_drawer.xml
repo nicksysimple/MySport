@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Athletics"
+            android:icon="@drawable/marathon"
+            android:title="Athletics" />
+
+        <item
+            android:id="@+id/Volley"
+            android:icon="@drawable/volleyball"
+            android:title="VolleyBall" />
+
+        <item
+            android:id="@+id/football"
+            android:icon="@drawable/football"
+            android:title="FootBall" />
+
+        <item
+            android:id="@+id/rugby"
+            android:icon="@drawable/rugby"
+            android:title="Rugby" />
+
+
+        <item
+            android:id="@+id/hockey"
+            android:icon="@drawable/hockey"
+            android:title="Hockey" />
+
+
+    </group>
+
+    <item android:title="About">
+        <menu>
+
+
+            <item
+                android:id="@+id/Developer"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Developer" />
+
+
+            <item
+                android:id="@+id/Help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>
