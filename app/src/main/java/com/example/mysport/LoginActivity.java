@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @BindView(R.id.facebook) ImageView mFacebook;
     @BindView(R.id.twitter) ImageView mTwitter;
     @BindView(R.id.google)  ImageView mGoogle;
-
+    private AwesomeValidation awesomeValidation;
 
 
 
@@ -40,10 +44,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         mBtn.setOnClickListener(this);
         mForgot.setOnClickListener(this);
         mRegister.setOnClickListener(this);
+        awesomeValidation.addValidation(this,R.id.Userin,"^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$",R.string.invalid_name);
+        String regexPassword = ".{8,}";
+        awesomeValidation.addValidation(this, R.id.Passin, regexPassword, R.string.invalid_password);
+
     }
 
     @Override
@@ -55,11 +64,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         }
         if (v == mBtn){
-            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
 
-            Toast.makeText(LoginActivity.this,"Login succesfull",Toast.LENGTH_LONG).show();
-
-            startActivity(intent);
+            submitForm();
 
 
         }
@@ -73,5 +79,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
 
+    }
+
+    private void submitForm() {
+        if (awesomeValidation.validate()){
+            Toast.makeText(this,"validation successful",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+            startActivity(intent);
+
+
+
+        }
+        else{
+            Toast.makeText(this,"validation is not successful",Toast.LENGTH_SHORT).show();
+
+        }
     }
 }
